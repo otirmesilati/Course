@@ -21,7 +21,7 @@ first = fname + lname
 
 # These are all the sames
 
-second = "{} {}.format"(lname, fname) # concat strings
+second = "{} {}".format(lname, fname) # concat strings
 third = f"{lname} {fname}"
 forth = "%s %s" % (lname, fname)
 print(t)
