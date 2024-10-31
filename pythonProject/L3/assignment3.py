@@ -88,7 +88,7 @@ filey.close()
 
 filey = open("words.txt", "r")
 print(filey.read())
-
+filey.close()
 
 # Q.10
 filey = open("words.txt", "r+", encoding="utf-8")
