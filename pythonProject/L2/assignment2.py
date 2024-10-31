@@ -58,14 +58,65 @@ if x > y:
 else:
     print("small")
 
+
 # Q.2
 for index in range(5):
     print(index + 1)  # (index + 1) -> make sure the printing is from 1 through 5 instead of 0 through 4
 
+
 # Q.3
+my_var = 3
+if my_var == 1:
+    print("winter")
+elif my_var == 2:
+    print("Autumn/fall")
+
+
 # Q.4
+# the 1 ran 1 time, 2 runs 2 times, 3 ran for 3 times ... the n'th number runs n times,
+# so for the largest number 10 -> 10 runs! yay! QED :D
+
+
 # Q.5
-# Q.3
-# Q.1
-# Q.2
-# Q.3
+age = 1157
+letter = 'Z'
+coin_value = 3.62
+fly_answer = False
+apartment_number = 9876
+
+
+# Q.6
+print(f"My age: {age}, my first name's letter: {letter}, Dollar Currency: {coin_value}, Did I ever flew abroad? "
+      f"{fly_answer}, and my apartment number is {apartment_number}")
+print(coin_value + age)
+
+
+# Q.7
+phone_number = input("Enter phone number: ")
+print("phone number: ", phone_number)
+
+
+# Q.8
+def hello():
+    print("hello")
+
+
+def calculate():
+    print(5+3.2)
+
+
+# Q.9
+name_given = input("Enter your name: ")
+number_given = int(input("Enter number: "))
+print(number_given / 2)
+
+# Q.10
+pass
+
+"""
+
+10. Write a program with the following
+10.1 Method that receive two numbers, add them, and return the the sum
+10.2 Method that receive two Strings, add space between them, and return one spaced string
+
+"""
