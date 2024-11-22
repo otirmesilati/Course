@@ -10,7 +10,7 @@ def home():
 
 @app.route('/names')
 def name_fun():
-    return "Hi"
+    return "Avi, Benny, Moshe x2"
 
 
 if __name__ == '__main__':
