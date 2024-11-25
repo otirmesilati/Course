@@ -1,13 +1,11 @@
 from selenium import webdriver
 from time import sleep
 
-from selenium.webdriver import Keys
-
 
 # Setting the Test Data into the Browser
 def browser_testing(values_for_checking, expected):
     d = webdriver.Chrome()
-    d.get("http://localhost:63342/tip_calc/index.html?_ijt=daql0aiaj0ub6mrbdvfkh1gakn")
+    d.get("http://localhost:63342/tip_calc/index.html?_ijt=62v1m1na6vba8p143nbcipg429")
     d.find_element(by="id", value="billamt").send_keys(values_for_checking[0])
     d.find_element(by="xpath", value='//*[@id="serviceQual"]/option[3]').click()
     d.find_element(by="id", value="peopleamt").send_keys(values_for_checking[1])
