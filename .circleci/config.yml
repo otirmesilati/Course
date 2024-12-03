@@ -1,12 +1,20 @@
-config.yml
+version: 2.1
+
 jobs:
   build-and-test:
     docker:
       - image: cimg/node:16.10
     steps:
       - checkout
-      - node/install-packages:
-          pkg-manager: npm
+      - run:
+          name: Install dependencies
+          command: npm install  # Install dependencies using npm
       - run:
           name: Run tests
           command: npm test
+
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build-and-test
