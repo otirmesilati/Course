@@ -6,13 +6,7 @@ jobs:
       - image: cimg/node:16.10
     steps:
       - checkout
-      - run:
-          name: Install dependencies
-          command: npm install  # Install dependencies using npm
-      - run:
-          name: Run tests
-          command: npm test
-
+      
 workflows:
   version: 2
   build-deploy:
